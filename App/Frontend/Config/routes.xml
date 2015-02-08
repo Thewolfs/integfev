@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+	<route url="/" module="General" action="index" />
+	<route url="/planning" module="General" action="showPlanning" />
+	<route url="/faq" module="General" action="showFaq" />
+	
+	<route url="/connexion" module="Membre" action="connexion" />
+	<route url="/inscription" module="Membre" action="inscription" />
+	<route url="/deconnexion" module="Membre" action="deconnexion" />
+	<route url="/membre" module="Membre" action="showMembre" />
+	<route url="/modifier" module="Membre" action="modifier" />
+	
+	<route url="/forum/accueil" module="Forum" action="index" />
+	<route url="/forum/([0-9]+)" module="Forum" action="showForum" vars="id" />
+	<route url="/forum/topic/([0-9]+)" module="Forum" action="showTopic" vars="id" />
+	<route url="/forum/createTopic/([0-9]+)" module="Forum" action="createTopic" vars="id"/>
+	<route url="/forum/editMsg/([0-9]+)" module="Forum" action="editMsg" vars="id"/>
+	<route url="/forum/deleteMsg/([0-9]+)" module="Forum" action="deleteMsg" vars="id"/>
+	<route url="/forum/newForum" module="Forum" action="newForum"/>
+</routes>
