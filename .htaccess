@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteRule ^integfev/admin/ Web/bootstrap.php?app=Backend [QSA,L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^integfev/(.*)$ Web/bootstrap.php?app=Frontend [QSA,L]
+</IfModule>
